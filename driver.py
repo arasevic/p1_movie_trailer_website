@@ -1,43 +1,35 @@
 import movie
-import fresh_tomatoes
-
-#def do_nothing():
-    #print("This is a test!")
+import movie_trailer_generator
 
     
-toy_story = movie.Movie("Toy Story",
-                         "A story of a boy and his toys that come to life",
-                         "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
-                         "https://www.youtube.com/watch?v=vwyZH85NQC4")
+gladiator = movie.Movie("Gladiator",
+                         "http://upload.wikimedia.org/wikipedia/en/8/8d/Gladiator_ver1.jpg",
+                         "https://www.youtube.com/watch?v=uwTKRz-WmHU")
     
 
-#print(toy_story.storyline)
-
-avatar = movie.Movie("Avatar",
-                      "A marine on an alien planet",
-                      "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
-                      "https://www.youtube.com/watch?v=5PSNL1qE6VY")
-
-#print(avatar.storyline)
-#avatar.show_trailer()
-
-school_of_rock = movie.Movie("School of Rock", "Storyline",
-                             "http://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
-                             "https://www.youtube.com/watch?v=3PsUJFEBC74")
-
-ratatouille = movie.Movie("Ratatouille", "Storyline",
-                             "http://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
-                             "https://www.youtube.com/watch?v=c3sBBRxDAqk")
-
-midnight_in_paris = movie.Movie("Midnight in Paris", "Storyline",
-                             "http://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
-                             "https://www.youtube.com/watch?v=atLg2wQQxvU")
-
-hunger_games = movie.Movie("Hunger Games", "Storyline",
-                             "http://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
-                             "https://www.youtube.com/watch?v=PbA63a7H0bo")
+bull_durham = movie.Movie("Bull Durham",
+                      "http://upload.wikimedia.org/wikipedia/en/e/ef/Bull_Durham_film_poster.jpg",
+                      "https://www.youtube.com/watch?v=dnJFndf-Krg")
 
 
-movies = [toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
 
-fresh_tomatoes.open_movies_page(movies)
+field_of_dreams = movie.Movie("Field of Dreams", 
+                             "http://upload.wikimedia.org/wikipedia/en/6/6b/Field_of_Dreams_poster.jpg",
+                             "https://www.youtube.com/watch?v=vlTX_ckJ4nM")
+
+donnie_brasco = movie.Movie("Donnie Brasco", 
+                             "http://upload.wikimedia.org/wikipedia/en/b/bb/Donnie_brasco_ver2.jpg",
+                             "https://www.youtube.com/watch?v=ShM8bGKVFXg")
+
+goodfellas = movie.Movie("Goodfellas", 
+                             "http://upload.wikimedia.org/wikipedia/en/7/7b/Goodfellas.jpg",
+                             "https://www.youtube.com/watch?v=qo5jJpHtI1Y")
+
+hamlet = movie.Movie("Hamlet", 
+                             "http://upload.wikimedia.org/wikipedia/en/e/e9/Hamlet_1996_poster.jpg",
+                             "https://www.youtube.com/watch?v=UjHXIWLTsOk")
+
+
+movies = [gladiator, bull_durham, field_of_dreams, donnie_brasco, goodfellas, hamlet]
+
+movie_trailer_generator.open_movies_page(movies)
