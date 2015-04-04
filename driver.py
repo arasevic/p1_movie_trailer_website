@@ -1,7 +1,10 @@
 import movie
 import movie_trailer_generator
 
-    
+"""This script serves as the driver for the program"""
+
+#generate instance of the movie class that will be displayed on the html page
+
 gladiator = movie.Movie("Gladiator",
                          "http://upload.wikimedia.org/wikipedia/en/8/8d/Gladiator_ver1.jpg",
                          "https://www.youtube.com/watch?v=uwTKRz-WmHU")
@@ -29,6 +32,7 @@ hamlet = movie.Movie("Hamlet",
                              "http://upload.wikimedia.org/wikipedia/en/e/e9/Hamlet_1996_poster.jpg",
                              "https://www.youtube.com/watch?v=UjHXIWLTsOk")
 
+#create array of movie instances to be passed as a paramterer to the open_movies_page method
 
 movies = [gladiator, bull_durham, field_of_dreams, donnie_brasco, goodfellas, hamlet]
 

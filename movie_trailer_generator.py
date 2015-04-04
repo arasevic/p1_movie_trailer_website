@@ -2,6 +2,9 @@ import webbrowser
 import os
 import re
 
+
+"""This script dynamically generates the html that will display the movies in the driver.py script """
+
 # Styles and scripting for the page
 main_page_head = '''
 <head>
