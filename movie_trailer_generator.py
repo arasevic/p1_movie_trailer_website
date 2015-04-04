@@ -55,15 +55,15 @@ main_page_head = '''
             background-color: white;
         }
          .navbar-custom {
-  background-color: #009999;
-  border-color: #007878;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#00cccc), to(#009999));
-  background-image: -webkit-linear-gradient(top, #00cccc, 0%, #009999, 100%);
-  background-image: -moz-linear-gradient(top, #00cccc 0%, #009999 100%);
-  background-image: linear-gradient(to bottom, #00cccc 0%, #009999 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00cccc', endColorstr='#ff009999', GradientType=0);
-}
+            background-color: #009999;
+            border-color: #007878;
+            background-image: -webkit-gradient(linear, left 0%, left 100%, from(#00cccc), to(#009999));
+            background-image: -webkit-linear-gradient(top, #00cccc, 0%, #009999, 100%);
+            background-image: -moz-linear-gradient(top, #00cccc 0%, #009999 100%);
+            background-image: linear-gradient(to bottom, #00cccc 0%, #009999 100%);
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00cccc', endColorstr='#ff009999', GradientType=0);
+        }
         .navbar-custom .navbar-brand {
             color: #050303;
         }
@@ -78,7 +78,7 @@ main_page_head = '''
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id');
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               'id': 'trailer-video',
